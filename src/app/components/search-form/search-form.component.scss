@@ -1,0 +1,9 @@
+:host{
+  display: block;
+}
+
+.mat-form-field{
+  + .mat-form-field{
+    margin-left: 16px;
+  }
+}

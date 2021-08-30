@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="search()">
+  <mat-card>
+    <mat-form-field>
+      <mat-label>From date</mat-label>
+      <input
+        formControlName="fromDate"
+        matInput
+        [matDatepicker]="fromDatePicker"
+        (focus)="fromDatePicker.opened = true"
+        (click)="fromDatePicker.opened = true">
+      <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #fromDatePicker></mat-datepicker>
+    </mat-form-field>
+    <mat-card-actions>
+      <button type="submit" mat-raised-button color="primary" (click)="search()" [disabled]="form.invalid">Search</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

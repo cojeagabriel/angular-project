@@ -1,0 +1,19 @@
+.mat-card{
+  + .mat-card{
+    margin-top: 16px;
+  }
+}
+
+.mat-card{
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  margin-top: 16px;
+}
+
+strong{
+  font-weight: 500;
+}
