@@ -24,21 +24,13 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { SearchResultsComponent } from './components/search-results/search-results.component';
-import { SelectedOptionsComponent } from './components/selected-options/selected-options.component';
-import { SearchFormComponent } from './components/search-form/search-form.component';
 import { SearchComponent } from './components/search/search.component';
-import { SearchFiltersComponent } from './components/search-filters/search-filters.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchFormComponent,
     SearchComponent,
-    SearchFiltersComponent,
-    SearchResultsComponent,
-    SelectedOptionsComponent
   ],
   imports: [
     BrowserModule,
